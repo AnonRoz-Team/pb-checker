@@ -35,7 +35,7 @@ try:
  / ___/   / _  |        %sPoint Blank Checker%s
 /_/ oint /____/ lank    %swa.me/628996604524
 '''%(C1,W0,C1,W0,C1,W0)
-	ThreadPool(2).map(cek,open(sys.argv[1]).read().splitlines())
+	ThreadPool(20).map(cek,open(sys.argv[1]).read().splitlines())
 	print '\n%s[ %sDONE %s] Saved in results.txt'%(W0,G0,W0)
 except requests.exceptions.ConnectionError:
 	exit('%s[%s!%s] %sCheck internet'%(W1,R1,W1,W0))
